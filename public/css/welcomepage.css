@@ -1,49 +1,75 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #075985; 
-    font-family: Arial, sans-serif;
+    background-color: #075985;
+    font-weight: 600;
+    /* Background color matching the image */
+    font-family: 'Nunito Sans';
+    box-sizing: border-box;
 }
 
-
-
 .container {
-    height: 750px;
-    width: 450px;
     text-align: center;
-    justify-content: center;
-    font-weight: 700;
     background-color: #F5F7FB;
-    padding: 25px 10px;
-    border-radius: 10px;
-    box-shadow: 15px 15px 10px #354052;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 15px 15px 15px #354052;
+    /* Max width for larger screens */
+    box-sizing: border-box;
 }
 
 .logo img {
-    max-width: 100%;
-
+    width: 100%;
+    height: auto;
+    max-width: 350px;
 }
 
 .text {
     margin: 20px 0;
     color: #075985;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 .button {
     background-color: #075985;
-    color: #F5F7FB;
-    padding: 15px 25px;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    width: 100%;
+    max-width: 150px;
+    /* Optional: max width for larger screens */
 }
 
 .button:hover {
     background-color: #354052;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 0.9em;
+        /* Slightly smaller font size on smaller screens */
+    }
+
+    .button {
+        padding: 8px 16px;
+        /* Adjust padding for smaller screens */
+        font-size: 0.9em;
+        /* Smaller font size for buttons */
+    }
 }
 

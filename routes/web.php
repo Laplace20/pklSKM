@@ -15,20 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcomepage');
-});
+})->name('welcomepage');
 
-Route::get('/Biodata', function () {
+Route::get('/biodata', function () {
     return view('biodata');
-});
+})->name('biodata');
 
-Route::get('/Komentar', function () {
+Route::get('/komentar', function () {
     return view('komentar');
-});
+})->name('komentar');
 
-Route::get('/Pertanyaan', function () {
+Route::get('/pertanyaan', function () {
     return view('Pertanyaan');
-}); 
+})->name('pertanyaan');
 
-Route::get('/Selesai', function () {
+Route::get('/selesai', function () {
     return view('selesai');
-});
+})->name('selesai');
